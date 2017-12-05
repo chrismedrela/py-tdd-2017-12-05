@@ -5,7 +5,3 @@ mock
 nose2
 behave
 ipython
-typing
-
-# Zależności potrzebne do zbudowania podręcznika
-sphinxjp.themes.basicstrap
