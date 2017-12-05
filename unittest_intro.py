@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 '''Testowany kod - funkcja factorial'''
 
 def factorial(num):
@@ -59,6 +61,7 @@ class Assertions(unittest.TestCase):
     def test(self):
         self.assertTrue(['not-empty'])
         self.assertFalse([])
+        
         self.assertNotEqual(2, 3)
         
         first_dict = {}
