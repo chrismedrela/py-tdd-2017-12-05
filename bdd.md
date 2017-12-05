@@ -33,4 +33,3 @@ W ramach tego cyklu pojawi się wiele cykli TDD.
         2. Napisz najprostszą implementację zaliczającą wszystkie testy.
         3. Zrefaktoryzuj testy i implementację.
 3. Na tym etapie test akceptacyjny powinien zostać zaliczony.
-    
