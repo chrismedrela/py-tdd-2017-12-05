@@ -12,3 +12,7 @@ if __name__ == "__main__":
     rul.append('third')
     rul.append('second')
     print(rul)
+
+    rul2 = RecentlyUsedList()
+    rul2.extend(['first', 'second', 'third', 'second'])
+    print(rul2)
