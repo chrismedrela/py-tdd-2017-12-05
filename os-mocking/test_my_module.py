@@ -1,7 +1,8 @@
 import os.path
 import unittest
 
-import mock  # pip install mock
+import mock  # pip install mock  # Python 2
+from unittest import mock  # Python 3
 
 import my_module
 from my_module import my_remove
