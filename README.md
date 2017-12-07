@@ -26,3 +26,11 @@
 2017/01/01 | USD | No data for this day.
 2017/01/02 | ISK | 100 ISK = 3.7076 PLN
 invalid | USD | Invalid input.
+
+## Hint
+
+```python
+DATE_FORMAT = '%Y/%m/%d'
+date_as_str = request.form['date']
+date = datetime.datetime.strptime(date_as_str, DATE_FORMAT).date()
+```
