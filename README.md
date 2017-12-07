@@ -1,5 +1,7 @@
 # py-tdd-2017-12-05
 
+# NBP
+
 ```html
 <h1>Home Page</h1>
 <p>{msg}</p>
@@ -15,3 +17,12 @@
   <p><input type="submit" value="Get exchange rate!"></p>
 </form>
 ```
+
+## Przykładowe dane
+
+| data | waluta | oczekiwane wyjście |
+|-|-|-|
+2017/01/02 | USD | 1 USD = 4.2106 PLN
+2017/01/01 | USD | No data for this day.
+2017/01/02 | ISK | 100 ISK = 3.7076 PLN
+invalid | USD | Invalid input.
