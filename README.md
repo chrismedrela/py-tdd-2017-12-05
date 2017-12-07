@@ -37,3 +37,5 @@ date = datetime.datetime.strptime(date_as_str, DATE_FORMAT).date()
 ```
 
 # [Notatnik na hackmd.io](https://hackmd.io/AwUwxgrAzAHA7ATgLQhANjUgLAE2MJAI2DhCQgQCZY0ooKZCg===)
+
+# [Link do ankiety](https://plbe.nobleprog.com/tf/46602)
