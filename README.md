@@ -30,6 +30,7 @@ invalid | USD | Invalid input.
 ## Hint
 
 ```python
+import datetime
 DATE_FORMAT = '%Y/%m/%d'
 date_as_str = request.form['date']
 date = datetime.datetime.strptime(date_as_str, DATE_FORMAT).date()
