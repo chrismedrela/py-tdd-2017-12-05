@@ -23,13 +23,26 @@ Test jednostkowy to test pojedynczego modułu, klasy lub funkcji.
 # Algorytm BDD
 
 BDD składa się z dwóch zagnieżdżonych cykli.
-Zewnętrzny cykl polega na napisaniu i zaliczeniu jednego testu akceptacyjnego.
-W ramach tego cyklu pojawi się wiele cykli TDD.
+
+Zewnętrzny cykl składa się z trzech kroków:
+
+1. Napisanie najprostszego niezaliczonego testu akceptacyjnego.
+2. Zaliczenie testu akceptacyjnego
+3. Refaktoryzacja testów akceptacyjnych.
+
+Drugi krok, czyli zaliczenie testu akceptacyjnego, polega na zastosowaniu TDD dla wszystkich modułów, zaczynając od najwyższego (podejście outside-in).
+TDD jest tutaj wewnętrznym cyklem.
+
+Dokładny algorytm wygląda następująco:
 
 1. Napisz najprostszy nieprzechodzący test akceptacyjny.
-2. Dla każdego modułu, zaczynając od najwyższego:
-    1. Dopóki nie zaimplementowano całego modułu, powtarzaj cykle TDD:
-        1. Napisz najprostszy nieprzechodzący test jednostkowy.
-        2. Napisz najprostszą implementację zaliczającą wszystkie testy.
-        3. Zrefaktoryzuj testy i implementację.
-3. Na tym etapie test akceptacyjny powinien zostać zaliczony.
+2. Dla każdego modułu, zaczynając od najwyższego, wykorzystaj TDD:
+    1. Jeśli rozpatrzyliśmy już wszystkie moduły, przejdź do dużego trzeciego kroku.
+    2. Jeśli nie potrzebujemy więcej testów dla tego modułu, skocz do podkroku 1.
+    3. Napisz najprostszy nieprzechodzący test jednostkowy.
+    4. Napisz najprostszą implementację zaliczającą wszystkie testy.
+    5. Zrefaktoryzuj testy i implementację.
+    6. Skocz do podkroku 2.
+3. Na tym etapie test akceptacyjny powinien zostać zaliczony (może być konieczne wprowadzenie drobnych zmian).
+4. Refaktoring testów akceptacyjnych
+5. Jeżeli potrzeba zaimplementować więcej funkcjonalności, skocz do kroku 1.
